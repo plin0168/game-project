@@ -118,7 +118,7 @@ margin-left: 500px;
   top:0;
   width: 700px;
   height: 350px;
-  background: url('file:///Users/plin005/projects/photos/Project_background.jpeg')no-repeat 0px -1px;
+  background: url('./photos/Project_background.jpeg')no-repeat 0px -1px;
   background-size: contain;
   float: left;
   margin-right: 20px;
