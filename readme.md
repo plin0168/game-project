@@ -27,6 +27,8 @@ different colors reaches 0.
 ### Technology used
 html, css, javascript, Jquery
 
+keyup,keydown function to allocate action function to the right keyboard letter. 
+
 character movement changes determined by add/remove class images
 
 Offset function used to determine distance between two objects.
