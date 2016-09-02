@@ -30,4 +30,9 @@ html, css, javascript, Jquery
 character movement changes determined by add/remove class images
 
 Offset function used to determine distance between two objects.
-Function used to determine at what distance a hit is committed 
+Function used to determine at what distance a hit is committed
+
+### Future Improvement Needs
+- sound for background and hit action
+- create borders and improve overall background decoration.
+-create restart function
