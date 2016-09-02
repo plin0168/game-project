@@ -1,6 +1,10 @@
 Player Vs Player fight match
+Story:
+Ken and Ryu are in a heated argument on who is the better ultimate fighter.
+Player1 controls Ken, Player2 controls Ryu
 
-- Use the keyboard to begin player action movements:
+Use the keyboard to begin player action movements:
+Character command action:
 
 player 1 (Ken) controls:
 Walk left: z
