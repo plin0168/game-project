@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>project game</title>
+  <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
+<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+
+<div class="stage">
+  <div class="ken stance"></div>
+
+  <div class="Ryu stance"></div>
+</div>
+
+
+<div class="Health_Bar">
+  <div id="KenHp" class="kenHpBar">
+  Ken HP</div>
+  <div id="RyuHp" class="ryuHpBar">Ryu HP</div>
+
+</div>
+
+<div class="commands">
+  <h1>Controls</h1>
+  Ken's punch: <button id="a">a</button><br>
+  Ken's kick: <button id="s">s</button><br>
+  Ken walking right: <button id="right">x</button><br>
+              Ken walking left<button id="left">z</button><br>
+<br>
+  Ryu Punch: <button id="j">j</button><br>
+  Ryu kick: <button id="k">k</button><br>
+  Ryu walking right: <button id="RyuRight">m</button><br>
+              Ryu walking left: <button id="RyuLeft">n</button><br>
+</div>
+
+<br>
+
+<form class="restart" action="index.html" method="post" attribute="reset">
+  <input id ="myForm" type="reset" onclick="myFunction()" value="Restart FIGHT">
+</form>
+
+
+
+
+  <script src="app.js"></script>
+
+  </body>
+</html>
