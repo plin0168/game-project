@@ -23,3 +23,11 @@ kick: k
 
 - Game ends when either character's health points indicated in
 different colors reaches 0.
+
+### Technology used
+html, css, javascript, Jquery
+
+character movement changes determined by add/remove class images
+
+Offset function used to determine distance between two objects.
+Function used to determine at what distance a hit is committed 
