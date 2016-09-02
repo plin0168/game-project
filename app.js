@@ -249,7 +249,9 @@ $(document).keydown(function(e){
     };
     if (e.keyCode == 75){
       $Ryu.removeClass('stance');
-      $Ryu.addClass('RyuKick');var distance = $('.Ryu').offset().left - ($('.ken').offset().left + $('.ken').width())
+      $Ryu.addClass('RyuKick');
+
+      var distance = $('.Ryu').offset().left - ($('.ken').offset().left + $('.ken').width())
 
       if(distance <= -50 && distance >= -130) {
       game.player1.health -= 10;
