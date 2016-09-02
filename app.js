@@ -1,3 +1,5 @@
+//
+// Establishing player1 and player2 health game set up
 var game = {
   player1: {
     name: "Ken",
@@ -8,42 +10,12 @@ var game = {
     health: 100
   }
 }
+// calculating distance between two objects
 var distance = $('.Ryu').offset().left - ($('.ken').offset().left + $('.ken').width())
 
 var $ken = $('.ken');
 
-// $(document).keydown(function(e){
-// if(e.keycode==65){function of a}
-
-// $ken.keyup(function(event){
-//   if(event.keycode == 65){
-//     $("#s").click(function(){
-//       $ken.removeClass('stance')
-//       $ken.addClass('kick')
-//
-//       setTimeout(function(){
-//         $ken.removeClass('kick')
-//         $ken.addClass('stance')
-//       }, 150)
-//
-//       var distance = $('.Ryu').offset().left - ($('.ken').offset().left + $('.ken').width())
-//
-//       if(distance <= -20 && distance >= -130) {
-//       game.player2.health -= 15;
-//       console.log("there's a kick!");
-//
-//       if(game.player2.health <= 0){
-//         console.log("Ken Wins");
-//         window.alert("KEN WINS")
-//       } else if (game.player1.health <= 0){
-//         console.log("Ryu Wins");
-//         }
-//       }
-//     })
-//   }
-// })
-
-//ken's kick
+//ken's kick click hit function
 $('#s').on('click', function(){
   $ken.removeClass('stance')
   $ken.addClass('kick')
@@ -69,7 +41,7 @@ $('#s').on('click', function(){
   }
 })
 
-// Ken's punch
+// Ken's punch click system
 $('#a').on('click', function() {
   // switch ken position from 'stance' to 'punch`
   $ken.removeClass('stance')
@@ -98,16 +70,7 @@ $('#a').on('click', function() {
     }
 })
 
-// $('#right').on('click', function(){
-//   $ken.removeClass('stance')
-//   $ken.addClass('walk')
-//
-//   setTimeout(function(){
-//     $ken.removeClass('walk')
-//     $ken.addClass('stance')
-//   },150 )
-// })
-//Ken's walk function
+//Ken's walk click function
 var walkLeft = function(){
   $ken.addClass('walk').css({ marginLeft:'-=10px' });
 };
@@ -126,9 +89,9 @@ $('#right').on('mousedown mouseup', function(e){
 
 
 
-
+// Ryu variable
 var $Ryu = $('.Ryu')
-//Ryu punch action
+//Ryu punch 'click' action
 $('#j').on('click', function(){
   $Ryu.removeClass('stance')
   $Ryu.addClass('RyuPunch')
@@ -159,7 +122,7 @@ $('#j').on('click', function(){
 
 
 })
-//Ryu Kick action
+//Ryu Kick 'click' action
 $('#k').on('click',function(){
   $Ryu.removeClass('stance')
   $Ryu.addClass('RyuKick')
@@ -184,7 +147,7 @@ $('#k').on('click',function(){
         }
     }
 })
-//Ryu walk function
+//Ryu walk function, movement by 10px space
 var RyuwalkLeft = function(){
   $Ryu.addClass('walk').css({ marginLeft:'-=10px' });
 };
@@ -201,7 +164,7 @@ $('#RyuRight').on('mousedown mouseup', function(e){
     else { $Ryu.removeClass('walk'); }
 });
 
-
+// KEYDOWN keycode function action movements
 $(document).keydown(function(e){
     if(e.keyCode == 88){
       console.log("walking right");
@@ -304,12 +267,7 @@ $(document).keydown(function(e){
     };
   })
 
-  // else {
-  //   $ken.removeClass('walk');
-  //   $Ryu.removeClass('walk')
-  // }
-  // return false;
-
+// KEYUP FUNCTION ACTION MOVEMENT
 $(document).keyup(function(e) {
   if(e.keyCode == 88) {
     $ken.removeClass('walk');
@@ -344,30 +302,3 @@ $(document).keyup(function(e) {
         $Ryu.addClass('stance');}
 
 })
-
-// function myFunction(){
-//   HTMLFormElement.reset()
-// }
-
-// example of finding distance between ken and a box:
-// $('.Ryu').offset().left - ($('.ken').offset().left + $('.ken').width())
-
-
-
-//on click events
-// $('#a').click(punch){if(e.keycode ==65
-// && !$ken.hasClass('punch')){
-//   punch();
-// }
-// }
-
-// //on keydown events
-// $(document).on('keydown keyup', function(e){
-//   if (e.type == 'keydown') {
-//     //a - punch
-//     if(e.keycode ==65
-//     && !$ken.hasClass('punch')){
-//       punch();
-//     }
-//   }
-// })
